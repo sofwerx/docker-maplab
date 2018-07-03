@@ -45,6 +45,7 @@ You can install XQuartz from the OS distribution media or download the most rece
 Indirect GLX was disabled by default in Xorg 1.17, starting from XQuartz version 2.7.9, to enable indirect GLX and to allow remote visualization on the cluster you will have to issue at the terminal command prompt of your mac:
 
     defaults write org.macosforge.xquartz.X11 enable_iglx -bool true
+    defaults read org.macosforge.xquartz.X11 nolisten_tcp -bool false
 
 See About X11 and OS X Mountain Lion from http://support.apple.com/kb/HT5293.
 For Mac OS X 10.4 (Tiger): X11 should be installed from the OS media and manually started.

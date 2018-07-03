@@ -14,9 +14,9 @@ services:
       - 8090:8090
       - 11311:11311
     environment:
-      #DISPLAY: ${DISPLAY}
-      DISPLAY: /root/DISPLAY
+      DISPLAY: ${DISPLAY}
       ROSCORE_PORT: 11311
+      ROS_HOSTNAME: localhost
+      ROS_MASTER_URI: http://localhost:11311
     volumes:
-      - ./volumes/.Xauthority /root/.Xauthority
-      - ./volumes/DISPLAY:/root/DISPLAY
+      - ./volumes/.Xauthority:/root/.Xauthority

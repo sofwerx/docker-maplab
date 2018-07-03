@@ -19,5 +19,5 @@ If you are running a local docker-ce engine, try localhost:
     http://localhost:8090
 
 This likely requires a GLX direct/indirect X11 display to run.
-Please read the [GLX.md](GLX.md) file for instructions for your particular X11 display.
 
+Please read the [GLX.md](GLX.md) file for instructions for your particular X11 display.
