@@ -1,0 +1,22 @@
+#docker build -t sofwerx/maplab .
+#docker run -ti --name maplab sofwerx/maplab 
+
+version: '2.1'
+
+services:
+
+  maplab:
+    build: .
+    image: sofwerx/maplab
+    container_name: maplab
+    hostname: maplab
+    ports:
+      - 8090:8090
+      - 11311:11311
+    environment:
+      #DISPLAY: ${DISPLAY}
+      DISPLAY: /root/DISPLAY
+      ROSCORE_PORT: 11311
+    volumes:
+      - ./volumes/.Xauthority /root/.Xauthority
+      - ./volumes/DISPLAY:/root/DISPLAY
