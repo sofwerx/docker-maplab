@@ -21,3 +21,6 @@ If you are running a local docker-ce engine, try localhost:
 This likely requires a GLX direct/indirect X11 display to run.
 
 Please read the [GLX.md](GLX.md) file for instructions for your particular X11 display.
+
+Note: You may need to run `xterm` or some other X11 client app once on your mac to generate the `MIT_MAGIC_COOKIE` in `~/.Xauthority` for your XQuartz display.
+
