@@ -14,5 +14,10 @@ You can then pull up the maplab console via the floating TTY session at:
 
     http://{docker-engine-ip-address}:8090/
 
-This runs maplab as `--ros-free` as the `roscore` runtime requires a GLX enabled X11 display to run.
+If you are running a local docker-ce engine, try localhost:
+
+    http://localhost:8090
+
+This likely requires a GLX direct/indirect X11 display to run.
+Please read the [GLX.md](GLX.md) file for instructions for your particular X11 display.
 
