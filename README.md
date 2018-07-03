@@ -2,8 +2,10 @@
 
 Dockerization of the maplab project
 
-To run, use make:
+To run, clone this repo and then use make:
 
+    git clone https://github.com/sofwerx/docker-maplab
+    cd docker-maplab
     make
 
 This will build and run the docker container with the maplab components.
